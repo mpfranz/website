@@ -1,15 +1,27 @@
-Clone the repository
--> git clone https://github.com/mpfranz/website
+Git
+Initialize Git bash
+--> git init
 
-Create the html page
--> cd website
--> echo "Hello World" > index.html
+Fetch updates
+--> git fetch https://github.com/mpfranz/website
 
-Push to Github
--> git add --all
--> git commit -m "Initial commit"
--> git push -u origin master
+Add all files in working directory to your local repository
+--> git add .
 
-Check the website
-URL: http://mpfranz.github.io
+Make a commit
+--> git commit -m "Describe the committ"
 
+Push to remote repository
+--> git push origin master
+
+Add a remote repositiory
+--> git remote add origin https://github.com/mpfranz/website
+
+Github
+https://github.com/mpfranz/website
+
+HTML
+http://learn.shayhowe.com/html-css/getting-to-know-html/
+
+Website
+http://www.eaglepointcap.com/
