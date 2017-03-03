@@ -1,0 +1,15 @@
+Clone the repository
+-> git clone https://github.com/mpfranz/website
+
+Create the html page
+-> cd website
+-> echo "Hello World" > index.html
+
+Push to Github
+-> git add --all
+-> git commit -m "Initial commit"
+-> git push -u origin master
+
+Check the website
+URL: http://mpfranz.github.io
+
