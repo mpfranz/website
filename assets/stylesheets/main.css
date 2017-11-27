@@ -1,146 +1,52 @@
-/* http://meyerweb.com/eric/tools/css/reset/
-   v2.0 | 20110126
-   License: none (public domain)
-*/
-
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed,
-figure, figcaption, footer, header, hgroup,
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  font-size: 100%;
-  font: inherit;
-  vertical-align: baseline;
-}
-/* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure,
-footer, header, hgroup, menu, nav, section {
-  display: block;
-}
-body {
-  line-height: 1;
-}
-ol, ul {
-  list-style: none;
-}
-blockquote, q {
-  quotes: none;
-}
-blockquote:before, blockquote:after,
-q:before, q:after {
-  content: '';
-  content: none;
-}
-table {
-  border-collapse: collapse;
-  border-spacing: 0;
+/* Set height to 100% for body and html to enable the background image to cover the whole page: */
+body, html {
+    height: 100%
 }
 
-
-/* My CSS */
-
-/*
-  ========================================
-  Typography
-  ========================================
-*/
-
-.body {
-	font-family: Calibri;
+.bgimg {
+    /* Background image */
+    background-image: url('/w3images/forestbridge.jpg');
+    /* Full-screen */
+    height: 100%;
+    /* Center the background image */
+    background-position: center;
+    /* Scale and zoom in the image */
+    background-size: cover;
+    /* Add position: relative to enable absolutely positioned elements inside the image (place text) */
+    position: relative;
+    /* Add a white text color to all elements inside the .bgimg container */
+    color: white;
+    /* Add a font */
+    font-family: "Courier New", Courier, monospace;
+    /* Set the font-size to 25 pixels */
+    font-size: 25px;
 }
 
-.title {
-	font-size: 22px;
-	background: white;
+/* Position text in the top-left corner */
+.topleft {
+    position: absolute;
+    top: 0;
+    left: 16px;
 }
 
-.text {
-	background: white;
-	font-size: 14pt;
+/* Position text in the bottom-left corner */
+.bottomleft {
+    position: absolute;
+    bottom: 0;
+    left: 16px;
 }
 
-.copywrite {
-	font-size: 12pt;
-	background: white;
-	color: grey;
+/* Position text in the middle */
+.middle {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
 }
 
-
-/*
-  ========================================
-  Layout
-  ========================================
-*/
-
-*,
-*:before,
-*:after {
-  -webkit-box-sizing: border-box;
-     -moz-box-sizing: border-box;
-          box-sizing: border-box;
-	background: rgb(15, 36, 62);
-}
-
-/*Set common width and border*/
-.header,
-.outer,
-.inner_pic,
-.inner_text,
-.footer {
-	 width: 800px;
-	 background: white;
-}
-
-/*Size of header and footer*/
-.header, 
-.footer{
-  	margin: 0 auto;
-  	padding-left: 30px;
-  	padding-right: 30px;
-  	height: 50px;	
-}
-
-.header {
-	margin-top: 30px;
-	margin-bottom: 20px;
-	padding-top: 14px;
-}
-
-.outer {
-  	margin: 0 auto;
-  	padding-left: 30px;
-  	padding-right: 30px;
-  	height: 400px;
-}
-
-.inner_pic,
-.inner_text {
-	height: 360px;
-	width: 360px;
-	padding-top: 40px;
-}
-
-.inner_pic {
-	float: left;
-}
-
-.inner_text {
-	float: right;
-}
-
-.footer {
-	margin-top: 20px;
-	margin-bottom: 50px;
-	padding-top: 18px;
+/* Style the <hr> element */
+hr {
+    margin: auto;
+    width: 40%;
 }
